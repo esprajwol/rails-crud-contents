@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: angelswing_api_development
+  url: <%= ENV['DATABASE_URL'] %>
+
+test:
+  <<: *default
+  database: angelswing_api_test
+  url: <%= ENV.fetch('DATABASE_URL', 'postgresql://postgres:password@localhost:5432/angelswing_api_test') %>
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>

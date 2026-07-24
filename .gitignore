@@ -1,0 +1,43 @@
+# .gitignore for AngelSwing Rails API
+
+# Environment files (NEVER commit these)
+.env
+.env.local
+.env.*.local
+
+# Rails default ignores
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore node_modules (if any JS tooling is added)
+/node_modules
+
+# Ignore uploaded files
+/storage/*
+!/storage/.keep
+
+# Credentials (keep .enc files but not plain keys)
+config/master.key
+config/credentials/*.key
+
+# RSpec
+.rspec_status
+/spec/reports
+
+# Bundle
+/.bundle/
+/vendor/bundle
+
+# Bootsnap
+/tmp/cache/bootsnap*
+
+# macOS
+.DS_Store
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
