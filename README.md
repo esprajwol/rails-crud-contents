@@ -1,6 +1,6 @@
 # AngelSwing Rails Coding Test API
 
-A production-quality, JSON API built with **Ruby on Rails 7.1** (API-only mode) and **PostgreSQL**. Implements user authentication via JWT and a protected `Content` resource with owner-based authorization.
+A production-quality, JSON API built with **Ruby on Rails 8.1** (API-only mode) and **PostgreSQL**. Implements user authentication via JWT and a protected `Content` resource with owner-based authorization.
 
 ---
 
